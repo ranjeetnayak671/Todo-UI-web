@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .upper-container {
+            width: 50%;
+            height: 10%;
+            margin: 50px auto;
+            position: relative;
+        }
+
+        .upper-container1 {
+            width: 35%;
+            height: 100%;
+            padding-top: 20px;
+        }
+
+        #tasks {
+            font-weight: bold;
+            font-size: 2.5rem;
+        }
+
+        #lists {
+            font-size: 2.5rem;
+            margin-left: 10px;
+            opacity: 0.5;
+        }
+
+        .upper-container2 {
+            width: 30%;
+            height: 100%;
+            padding-top: 1px;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+
+        #addlist {
+            position: absolute;
+            width: 80%;
+            height: 100%;
+            top: 0;
+            right: 0;
+            font-size: 30px;
+            opacity: 0.5;
+            padding-top: 9px;
+
+        }
+
+        .card1 {
+            border: 1.5px solid green;
+            height: 45vh;
+            width: 22%;
+            position: relative;
+            border-radius: 8px;
+            box-shadow: 5px 5px 10px gray;
+            
+
+        }
+
+        .div1 {
+            position: absolute;
+            padding-top: 10px;
+            top: 0px;
+            right: 0px;
+            font-size: 25px;
+            width: 85%;
+            text-align: left;
+            height: 20%;
+            color: darkcyan;
+            border-bottom: 1px solid green;
+        }
+
+        .div2 {
+            width: 90%;
+            height: 10%;
+            font-size: 20px;
+            color: darkred;
+            text-align: right;
+            position: absolute;
+            top: 35%;
+            font-weight: bold;
+            text-decoration: line-through;
+
+        }
+
+        .div3 {
+            width: 90%;
+            height: 10%;
+            position: absolute;
+            top: 55%;
+            text-align: left;
+            font-size: 18px;
+        }
+
+        #check {
+            width: 20px;
+            height: 20px;
+            margin-left: 10px;
+
+        }
+
+        
+
+        .body-card {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            align-items: center;
+            width: 60%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="upper-container">
+        <div class="upper-cointainer1">
+            <span id="tasks">Tasks</span>
+            <span id="lists">Lists</span>
+        </div>
+        <div class="upper-container2">
+
+            <div id="circle">
+                <i class="fa fa-plus-circle" style="font-size:40px;color:green"></i>
+            </div>
+            <div id="addlist">
+                Add Lists
+            </div>
+        </div>
+    </div>
+    <div class="body-card">
+        <div class="card1">
+            <div class="div1">
+                <p>Trip To Paris</p>
+            </div>
+
+            <div class="div2">
+                <p>Completed Task</p>
+            </div>
+            <div class="div3">
+                <form>
+                    <input type="checkbox" name="todo" id="check">
+                    <label for="todo">Pending Task</label>
+                </form>
+            </div>
+        </div>
+
+        <div class="card1">
+            <div class="div1">
+                <p>My Todo List</p>
+            </div>
+
+            <div class="div2">
+                <p>Completed Task</p>
+            </div>
+            <div class="div3">
+                <form>
+                    <input type="checkbox" name="todo" id="check">
+                    <label for="todo">Pending Task</label>
+                </form>
+            </div>
+        </div>
+        <div class="card1">
+            <div class="div1">
+                <p>My Todo List</p>
+            </div>
+
+            <div class="div2">
+                <p>Completed Task</p>
+            </div>
+            <div class="div3">
+                <form>
+                    <input type="checkbox" name="todo" id="check">
+                    <label for="todo">Pending Task</label>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    </div>
+</body>
+
+</html>
